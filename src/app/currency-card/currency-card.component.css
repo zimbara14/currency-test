@@ -1,0 +1,36 @@
+.card {
+  margin: 20px 0;
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.matcard {
+  width: 100%;
+  border: black solid thin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.green {
+  color: limegreen;
+}

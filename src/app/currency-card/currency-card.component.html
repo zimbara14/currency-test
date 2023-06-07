@@ -1,0 +1,21 @@
+<div class="card">
+  <p class="name">{{name}}</p>
+  <mat-card class="matcard">
+    <mat-card-content class="content">
+      {{value}}
+    </mat-card-content>
+    <mat-card-content class="content">
+      <div *ngIf="isZero">
+        (0.00)
+      </div>
+      <div *ngIf="!isZero && isPositive" class="item">
+        <mat-icon class="green">arrow_drop_up</mat-icon>
+        (+{{difference.toFixed(2)}})
+      </div>
+      <div *ngIf="!isZero && !isPositive" class="item">
+        <mat-icon class="mat-accent">arrow_drop_down</mat-icon>
+        (-{{difference.toFixed(2)}})
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
